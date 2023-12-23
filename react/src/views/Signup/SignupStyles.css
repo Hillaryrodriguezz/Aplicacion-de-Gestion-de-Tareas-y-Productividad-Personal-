@@ -1,0 +1,119 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #07162C;
+    text-align: center;
+    /* Centra horizontalmente el contenido */
+    font-family: Inter;
+
+}
+
+
+.form-element {
+    margin: 10px;
+    margin-bottom: 1.2rem;
+    justify-content: center;
+
+}
+
+.user-button {
+    background-color: white;
+    border: none;
+    color: #585858;
+    border-radius: 22px;
+    padding: 8px 67px;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 2em;
+    width: 273px;
+    height: 34px;
+    flex-shrink: 0;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 21px */
+    letter-spacing: -0.266px;
+    position: relative;
+    /* Necesario para los pseudoelementos */
+    outline: none;
+    font-family: Inter;
+
+}
+
+
+.password-button {
+    background-color: white;
+    border: none;
+    color: #585858;
+    border-radius: 22px;
+    padding: 8px 67px;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 2em;
+    width: 273px;
+    height: 34px;
+    flex-shrink: 0;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 21px */
+    letter-spacing: -0.266px;
+    position: relative;
+    /* Necesario para los pseudoelementos */
+}
+
+
+.user-button input,
+.password-button input {
+    border: none;
+    /* Elimina el borde del input */
+    outline: none;
+    /* Elimina el borde al hacer clic en el input */
+    background-color: white;
+    color: #585858;
+    font-family: Inter;
+
+}
+
+
+
+/* Estilos adicionales para el botón (ajusta según sea necesario) */
+.form-button {
+    background-color: #FF9300;
+    border: none;
+    border-radius: 22px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 273px;
+    height: 34px;
+    flex-shrink: 0;
+    padding-bottom: 1.9rem;
+    font-size: 14px;
+    font-style: normal;
+    color: white;
+    font-weight: 500;
+    line-height: 150%;
+    /* 21px */
+    letter-spacing: -0.266px;
+}
+
+.link-forgot {
+    color: white;
+    transition: 0.5s;
+    text-decoration: none;
+    /* Quita el subrayado */
+}
+
+.link-forgot:hover {
+    color: rgb(255, 180, 119);
+}
+
+.signup__title {
+    color: #ffffff;
+    font-weight: 100;
+}

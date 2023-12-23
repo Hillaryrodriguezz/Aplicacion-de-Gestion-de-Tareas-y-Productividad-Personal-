@@ -1,0 +1,37 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.popup-container {
+    background: white;
+    border-radius: .4em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    padding: 2em;
+}
+
+.cancel__button button {
+    background-color: #1b6ab9;
+}
+
+.task__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000000;
+}
+
+.help__subtitle {
+    margin-top: -.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #8a8a8a;
+}

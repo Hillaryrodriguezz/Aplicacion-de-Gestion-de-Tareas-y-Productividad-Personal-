@@ -1,0 +1,134 @@
+@import url('https://fonts.cdnfonts.com/css/jockey-one');
+
+* {
+    font-family: Jockey One;
+    color: #ffffff;
+}
+
+.details-content {
+    width: 100%;
+    height: 180px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #2F91F5;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 6.2em;
+    /* padding-left: 118px; */
+}
+
+.details-content>img {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.user-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.user-info-container>h3 {
+    color: #F5F5F5;
+    text-align: center;
+    font-family: Jockey One;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.user-info-container>p {
+    color: #F5F5F5;
+    font-family: Jockey One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/* Estilos para pantallas medianas (de 768px a 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .details-content {
+        padding: 4em;
+        gap: 2.5em;
+    }
+
+    .details-content>img {
+        width: 12vh;
+        height: 12vh;
+        object-fit: cover;
+    }
+
+    .user-info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .user-info-container>h3 {
+        color: #F5F5F5;
+        text-align: center;
+        font-family: Jockey One;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .user-info-container>p {
+        width: 100%;
+        color: #F5F5F5;
+        font-family: Jockey One;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .details-content {
+        width: 100%;
+        height: auto;
+        padding: 1em;
+        gap: 1em;
+    }
+
+    .details-content>img {
+        width: 6vh;
+        height: 6vh;
+        object-fit: cover;
+    }
+
+    .user-info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .user-info-container>h3 {
+        color: #F5F5F5;
+        text-align: center;
+        font-family: Jockey One;
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .user-info-container>p {
+        width: 100%;
+        color: #F5F5F5;
+        font-family: Jockey One;
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

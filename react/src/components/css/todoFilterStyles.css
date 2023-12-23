@@ -1,0 +1,68 @@
+.filters-cont {
+    display: flex;
+    width: 100%;
+}
+
+.filter-title {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .filters-cont {
+        flex-direction: row;
+        gap: 1em;
+        overflow-x: scroll;
+    }
+
+    .filters-cont::-webkit-scrollbar {
+        width: .5em;
+        height: .5em;
+        display: flex;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        border-radius: 2em;
+        background: #cacaca;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .filters-cont {
+        flex-direction: row;
+        gap: 1em;
+        overflow-x: scroll;
+    }
+
+    .filters-cont::-webkit-scrollbar {
+        width: .5em;
+        height: .5em;
+        display: flex;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        border-radius: 2em;
+        background: #cacaca;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff;
+    }
+}

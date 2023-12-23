@@ -1,0 +1,137 @@
+.progreso-tareas-container {
+    background-color: aqua;
+    padding: 20px 32px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    width: 250px;
+    height: 350px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.progreso-tareas-container>h2 {
+    color: #454545;
+    text-align: center;
+    font-family: Jockey One;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* background-color: #111116; */
+    height: 100vh;
+    align-items: center
+}
+
+.progress {
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    /* background: #0505f7; */
+    text-align: center;
+    line-height: 200px;
+    margin: 20px
+}
+
+.progress::after {
+    content: "%";
+    color: #454545;
+}
+
+.progress .title {
+    position: relative;
+    z-index: 100;
+    color: #454545;
+}
+
+.progress .overlay {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #ffffff
+}
+
+.progress .left,
+.progress .right {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 10px solid #0A7DF3;
+    border-radius: 100px 0px 0px 100px;
+    border-right: 0;
+    transform-origin: right;
+}
+
+.progress .left {
+    animation: load1 1s linear forwards;
+}
+
+.progress:nth-of-type(2) .right,
+.progress:nth-of-type(3) .right {
+    animation: load2 .5s linear forwards 1s;
+}
+
+.progress:last-of-type .right,
+.progress:first-of-type .right {
+    animation: load3 .8s linear forwards 1s;
+}
+
+@keyframes load1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes load2 {
+    0% {
+        z-index: 100;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        z-index: 100;
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes load3 {
+    0% {
+        z-index: 100;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        z-index: 100;
+        transform: rotate(315deg);
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
+
+@media screen and (max-width: 767px) {
+    .progreso-tareas-container {}
+}

@@ -1,0 +1,109 @@
+@import url('https://fonts.cdnfonts.com/css/jockey-one');
+
+* {
+    font-family: Jockey One;
+}
+
+.menu-container {
+    width: 250px;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    background: #FAFAFA;
+    box-shadow: -3px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    gap: 1em;
+    width: 250px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 42px;
+}
+
+.logo-container>h1 {
+    margin-left: 14px;
+    color: #454545;
+    text-align: center;
+    font-family: Jockey One;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu-options {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.logout-button {
+    position: fixed;
+    bottom: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .menu-container {
+        background: #FAFAFA;
+        box-shadow: -3px 0px 20px 0px rgba(0, 0, 0, 0.15);
+        align-items: flex-start;
+        padding: 1em;
+        width: auto;
+    }
+
+    .menu-content {
+        width: auto;
+    }
+
+    .logo-container {
+        padding: .5em;
+    }
+
+    .logo-container>h1 {
+        display: none;
+    }
+
+    .menu-options {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .menu-container {
+        background: #FAFAFA;
+        box-shadow: -3px 0px 20px 0px rgba(0, 0, 0, 0.15);
+        align-items: flex-start;
+        padding: 1em;
+        width: auto;
+    }
+
+    .menu-content {
+        width: auto;
+    }
+
+
+    .logo-container {
+        padding: .5em;
+    }
+
+    .logo-container>h1 {
+        display: none;
+    }
+
+    .menu-options {
+        margin-top: 0;
+    }
+}
